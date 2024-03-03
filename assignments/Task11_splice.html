@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>splice in js arrays</title>
+    </head>
+    <body>
+        <script>
+            let months=[2,3,4,5,6];
+            console.log(months)
+            months.splice(0,0,1);
+            console.log(months);
+            months.splice(6,0,7,8,9,10,11,12);
+            console.log(months);
+            months.splice(9,0,91,92,93);
+            console.log(months);
+            months.splice(0,3);         //removes 1st three elements
+            console.log(months);
+            months.splice(6,3);         //remove 3 ele from index 6-->91,92,93
+            console.log(months);
+            months.splice(0,0,1,2,3);
+            console.log(months);
+            months.splice(3,2);
+            console.log(months);        //remove 2 ele from index 3-->4,5
+        </script>
+    </body>
+</html>

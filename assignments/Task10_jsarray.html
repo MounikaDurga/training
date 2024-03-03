@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Push,pop,shift,unshift in javascript arrays</title>
+    </head>
+    <body>
+        <script>
+            let fruits=[];                  //let fruits=new array();
+            console.log(fruits);            // []
+            fruits.unshift('mango');
+            console.log(fruits);            //  ['mango']
+            fruits.unshift('kiwi');       
+            console.log(fruits);            // ['kiwi','mango']
+            fruits.unshift('cherry'); 
+            console.log(fruits);            //['cherry','kiwi','mango']   
+            fruits.push('papaya'); 
+            console.log(fruits);            //['cherry','kiwi','mango','papaya']       
+            fruits.push('pineapple'); 
+            console.log(fruits);            //['cherry','kiwi','mango','papaya','pineappple']       
+            fruits.push('banana');        
+            console.log(fruits);            //['cherry','kiwi','mango','papaya','pineapple','banana']         
+            fruits.shift();
+            console.log(fruits);            //['kiwi','mango','papaya','pineapple','banana']
+            fruits.shift();
+            console.log(fruits);            //['mango','papaya','pineapple','banana']         
+            fruits.pop();
+            console.log(fruits);            //['mango','papaya','pineapple']           
+            fruits.pop();          
+            console.log(fruits);            //['mango','papaya']
+
+
+
+        </script>
+    </body>
+</html>
